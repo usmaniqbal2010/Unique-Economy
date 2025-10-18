@@ -1,0 +1,41 @@
+name: UniqueEconomy
+main: com.uniqueeconomy.UniqueEconomy
+version: 1.0.0
+api-version: '1.20'
+author: Usman Iqbal
+softdepend: [Vault, LuckPerms, PlaceholderAPI, ajLeaderboards, Essentials]
+commands:
+  eco:
+    description: Main economy command
+    usage: /eco <balance|pay|convert|top|deposit|withdraw|history>
+  bank:
+    description: Open or manage bank
+    usage: /bank <open|deposit|withdraw|transfer|exchange|rates|history>
+  uniqueeco:
+    description: Admin commands
+    usage: /uniqueeco <license|vpn|export|import|migrate|reload>
+permissions:
+  unique.eco.balance:
+    description: Check balance
+    default: true
+  unique.eco.pay:
+    description: Pay other players
+    default: true
+  unique.eco.exchange:
+    description: Exchange currencies
+    default: true
+  unique.eco.admin:
+    description: Admin commands
+    default: op
+  unique.bank.open:
+    description: Open bank
+    default: true
+  unique.bank.deposit:
+    description: Deposit to bank
+    default: true
+  unique.bank.withdraw:
+    description: Withdraw from bank
+    default: true
+  unique.bank.transfer:
+    description: Transfer between accounts
+    default: true

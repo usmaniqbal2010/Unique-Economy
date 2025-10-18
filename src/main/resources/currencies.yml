@@ -1,0 +1,49 @@
+currencies:
+  USD:
+    name: US Dollar
+    symbol: $
+  EUR:
+    name: Euro
+    symbol: €
+  GBP:
+    name: British Pound
+    symbol: £
+  PKR:
+    name: Pakistani Rupee
+    symbol: Rs
+  INR:
+    name: Indian Rupee
+    symbol: ₹
+  JPY:
+    name: Japanese Yen
+    symbol: ¥
+  CNY:
+    name: Chinese Yuan
+    symbol: ¥
+  AUD:
+    name: Australian Dollar
+    symbol: A$
+  CAD:
+    name: Canadian Dollar
+    symbol: C$
+
+exchange-rates:
+  USD-EUR: 0.92
+  USD-GBP: 0.79
+  USD-PKR: 282.97
+  USD-INR: 83.12
+  USD-JPY: 149.50
+  USD-CNY: 7.24
+  USD-AUD: 1.52
+  USD-CAD: 1.36
+
+country-currency-map:
+  US: USD
+  PK: PKR
+  IN: INR
+  GB: GBP
+  EU: EUR
+  JP: JPY
+  CN: CNY
+  AU: AUD
+  CA: CAD

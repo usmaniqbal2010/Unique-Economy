@@ -1,0 +1,30 @@
+prefix: '&6[UniqueEconomy] &r'
+
+currency-symbol:
+  USD: '$'
+  EUR: '€'
+  GBP: '£'
+  PKR: 'Rs'
+
+balance: '{prefix}&aYour balance: &e{amount} {currency}'
+balance-other: '{prefix}&a{player}''s balance: &e{amount} {currency}'
+
+pay-success: '{prefix}&aYou paid &e{amount} {currency} &ato {player}'
+pay-received: '{prefix}&aYou received &e{amount} {currency} &afrom {player}'
+pay-insufficient: '{prefix}&cInsufficient funds!'
+
+bank-deposit-success: '{prefix}&aDeposited &e{amount} {currency} &ato bank'
+bank-withdraw-success: '{prefix}&aWithdrew &e{amount} {currency} &afrom bank'
+bank-insufficient: '{prefix}&cInsufficient bank balance!'
+
+exchange-success: '{prefix}&aExchanged &e{from-amount} {from-currency} &ato &e{to-amount} {to-currency}'
+exchange-fee: '{prefix}&7Fee: &e{fee-amount} {fee-currency}'
+
+daily-penalty-applied: '{prefix}&cDaily inactivity penalty applied: &e-{amount} {currency}'
+monthly-fee-applied: '{prefix}&cMonthly bank fee applied: &e-{amount} {currency}'
+
+welcome-balance: '{prefix}&aWelcome! Your starting balance: &e{amount} {currency}'
+
+no-permission: '{prefix}&cYou don''t have permission!'
+player-not-found: '{prefix}&cPlayer not found!'
+invalid-amount: '{prefix}&cInvalid amount!'

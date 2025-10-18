@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'com.uniqueeconomy'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://jitpack.io' }
+    maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT'
+    compileOnly 'com.github.MilkBowl:VaultAPI:1.7'
+    compileOnly 'net.luckperms:api:5.4'
+    compileOnly 'me.clip:placeholderapi:2.11.3'
+
+    // Libraries to include inside jar
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'com.maxmind.geoip2:geoip2:4.0.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+shadowJar {
+    // Ensure final jar replaces default one (no "-all" suffix)
+    archiveClassifier.set('')
+    mergeServiceFiles()
+    minimize()
+
+    // Relocate libraries to avoid conflicts
+    relocate 'com.zaxxer.hikari', 'com.uniqueeconomy.libs.hikari'
+    relocate 'com.maxmind.geoip2', 'com.uniqueeconomy.libs.geoip2'
+    relocate 'com.google.gson', 'com.uniqueeconomy.libs.gson'
+}
+
+tasks.build.dependsOn tasks.shadowJar

@@ -1,0 +1,71 @@
+starting-balance:
+  amount: 100.00
+  currency: USD
+
+geoip:
+  mode: server
+  api-key: ''
+  fallback-currency: USD
+
+rewards:
+  mining:
+    enabled: true
+    amount: 1.00
+    currency: USD
+    blocks-per-reward: 100
+  pvp:
+    enabled: true
+    amount: 10.00
+    currency: USD
+  mob-kill:
+    enabled: true
+    amount: 0.10
+    currency: USD
+
+fees:
+  daily-penalty:
+    enabled: true
+    amount: 5.00
+    currency: USD
+    days-inactive: 7
+  monthly-fee:
+    enabled: true
+    amount: 10.00
+    currency: USD
+    day-of-month: 1
+
+exchange:
+  fee-percent: 1.5
+  fee-fixed: 0.50
+  fee-currency: USD
+  rounding-mode: HALF_UP
+  auto-update-rates: true
+  update-interval-hours: 24
+
+bank:
+  interest-rate: 0.05
+  interest-interval-hours: 24
+  max-accounts: 5
+
+database:
+  type: MYSQL
+  host: localhost
+  port: 3306
+  database: uniqueeconomy
+  username: root
+  password: ''
+  pool-size: 10
+  sqlite-file: database.db
+
+license:
+  enabled: false
+  server-url: https://verify.uniqueeco.io
+  key: ''
+  offline-grace-hours: 24
+
+anti-vpn:
+  enabled: false
+  api-key: ''
+  kick-on-vpn: true
+
+auto-save-interval-minutes: 5

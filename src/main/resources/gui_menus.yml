@@ -1,0 +1,50 @@
+bank-menu:
+  title: '&6Bank Account'
+  size: 27
+  items:
+    balance:
+      slot: 10
+      material: GOLD_INGOT
+      name: '&aYour Balance'
+      lore:
+        - '&7Wallet: &e{wallet-balance}'
+        - '&7Bank: &e{bank-balance}'
+    deposit:
+      slot: 12
+      material: CHEST
+      name: '&aDeposit'
+      lore:
+        - '&7Click to deposit money'
+    withdraw:
+      slot: 14
+      material: HOPPER
+      name: '&aWithdraw'
+      lore:
+        - '&7Click to withdraw money'
+    exchange:
+      slot: 16
+      material: EMERALD
+      name: '&aExchange Currency'
+      lore:
+        - '&7Click to exchange currencies'
+
+admin-menu:
+  title: '&cAdmin Panel'
+  size: 54
+  items:
+    give-money:
+      slot: 10
+      material: DIAMOND
+      name: '&aGive Money'
+    take-money:
+      slot: 11
+      material: REDSTONE
+      name: '&cTake Money'
+    set-balance:
+      slot: 12
+      material: GOLD_BLOCK
+      name: '&eSet Balance'
+    view-transactions:
+      slot: 14
+      material: BOOK
+      name: '&7Transaction History'
